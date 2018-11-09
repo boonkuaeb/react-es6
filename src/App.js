@@ -8,8 +8,6 @@ class App extends Component {
         this.state = {
             likeMe:1
         }
-
-        this.handleClick = this.handleClick.bind(this);
     }
 
 
@@ -29,7 +27,7 @@ class App extends Component {
         );
     }
 
-    handleClick() {
+    handleClick = ()=> {
         console.log(this.state.likeMe)
     }
 }

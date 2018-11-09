@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import Header from './Header';
+import Es6Spread from './Es6Spread';
+import Es6Rest from './Es6Rest';
+import Es6Destructuring from './Es6Destructuring';
+import ReactState from './ReactState';
 
 class App extends Component {
 
@@ -13,6 +17,12 @@ class App extends Component {
 
     render() {
         let sample = "sample 01";
+
+        // Rest Parameter
+
+
+        // Destructuring
+
         return (
             <div className="App">
                 <Header
@@ -22,7 +32,13 @@ class App extends Component {
 
                 {/*<button onClick={this.handleClick.bind(this)}>Click Me</button>*/}
                 {/*<button onClick={()=>this.handleClick()}>Click Me</button>*/}
-                <button onClick={() => this.handleClick("Hi")}>Click Me</button>
+                <button onClick={() => this.handleClick("Hi")}>Click Me App</button>
+
+                <Es6Spread/>
+                <Es6Rest/>
+                <Es6Destructuring/>
+                <hr/>
+                <ReactState/>
             </div>
         );
     }

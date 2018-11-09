@@ -22,13 +22,13 @@ class App extends Component {
 
                 {/*<button onClick={this.handleClick.bind(this)}>Click Me</button>*/}
                 {/*<button onClick={()=>this.handleClick()}>Click Me</button>*/}
-                <button onClick={this.handleClick}>Click Me</button>
+                <button onClick={() => this.handleClick("Hi")}>Click Me</button>
             </div>
         );
     }
 
-    handleClick = ()=> {
-        console.log(this.state.likeMe)
+    handleClick = (greeting)=> {
+        console.log(greeting, this.state.likeMe)
     }
 }
 
